@@ -1,0 +1,37 @@
+/* Media Query para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+
+  /* Reorganizar el menú en columna */
+  .menu {
+      flex-direction: column;  /* Cambia la disposición a columna */
+      align-items: center;     /* Centra los elementos en el eje vertical */
+      gap: 10px;               /* Espacio entre elementos */
+  }
+
+  .menu > li {
+      margin-right: 0;         /* Elimina el margen derecho */
+      width: 100%;             /* Asegura que los elementos ocupen todo el ancho disponible */
+      text-align: center;      /* Centra el texto */
+  }
+
+  .menu > li a {
+      width: 100%;             /* Asegura que los enlaces ocupen todo el ancho */
+      padding: 10px 0;         /* Ajusta el padding para mantener proporciones */
+  }
+
+  /* Ajustar los submenús */
+  .menu li ul {
+      position: static;        /* Cambia la posición para no salirse del contenedor */
+      width: 100%;             /* Asegura que ocupen todo el ancho disponible */
+      box-sizing: border-box;  /* Incluye padding y bordes en el ancho */
+  }
+
+  .menu li ul li {
+      width: 100%;             /* Cada elemento del submenú ocupa todo el ancho */
+      text-align: center;      /* Centrar el texto */
+  }
+
+  .menu li ul li a {
+      padding: 8px 0;         /* Ajusta el padding */
+  }
+}
